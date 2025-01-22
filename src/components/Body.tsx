@@ -4,11 +4,11 @@ import { BaseProps } from './types'
 export interface BodyProps extends BaseProps<'body'> {}
 
 export function Body(props: BodyProps) {
-	const [self, rest] = splitProps(props, ['children', 'style'])
+	const [local, rest] = splitProps(props, ['children', 'style'])
 
 	return (
-		<body {...rest} style={self.style}>
-			{self.children}
+		<body {...rest} style={local.style}>
+			{local.children}
 		</body>
 	)
 }
