@@ -67,3 +67,7 @@ const getEmailHtml = query(async () => {
 ```
 
 3. Use the produced HTML to display on the browser (via an iframe) or to send emails using an Email Provider
+
+## Styling
+
+Currently only inline styling is supported via passing a `style` object prop to the component
