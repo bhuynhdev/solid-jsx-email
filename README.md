@@ -30,7 +30,7 @@ import { Html, Body, Section, Container, Button } from 'solid-jsx-email'
 export function MyEmail(props) {
   return (
     <Html lang='en'>
-      <Body style={mainStyle}>
+      <Body>
         <Section>
           <Container>
             <Button
@@ -57,6 +57,7 @@ export function MyEmail(props) {
 2. Render email on the server
 
 ```ts
+import { query } from '@solidjs/router'
 import { renderToString } from 'solid-js/web'
 import { MyEmail } from '~/emails/MyEmail'
 
