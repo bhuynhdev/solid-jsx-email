@@ -1,6 +1,6 @@
 {
 	"name": "solid-jsx-email",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Build emails with Solid",
 	"license": "MIT",
 	"author": "Bao Huynh",
@@ -24,18 +24,9 @@
 	"types": "./dist/index.d.ts",
 	"browser": {},
 	"exports": {
-		"solid": {
-			"development": "./dist/dev.jsx",
-			"import": "./dist/index.jsx"
-		},
-		"development": {
-			"import": {
-				"types": "./dist/index.d.ts",
-				"default": "./dist/dev.js"
-			}
-		},
-		"import": {
+		".": {
 			"types": "./dist/index.d.ts",
+			"solid": "./dist/index.jsx",
 			"default": "./dist/index.js"
 		}
 	},
